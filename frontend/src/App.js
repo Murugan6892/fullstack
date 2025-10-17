@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api')
+    fetch('http://backend:5000/api')
       .then(res => res.json())
       .then(json => setData(json.message))
       .catch(() => setData('Error connecting to backend'));
