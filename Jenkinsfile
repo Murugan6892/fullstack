@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Murugan6892/fullstack.git'
+                git branch: 'main', url: 'https://github.com/Murugan6892/fullstack.git'
             }
         }
 
